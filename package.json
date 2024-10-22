@@ -1,0 +1,35 @@
+{
+  "name": "mochi-bot",
+  "version": "0.1.0",
+  "description": "",
+  "author": {
+    "email": "brian.castro.bedoya@gmail.com",
+    "name": "Brian Castro Bedoya"
+  },
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=16",
+    "npm": ">=6"
+  },
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "start": "node dist/src/bot.js",
+    "dev:tsx": "tsx -r tsconfig-paths/register --watch src/bot.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "i18next": "^23.14.0",
+    "reflect-metadata": "^0.2.2",
+    "tsyringe": "^4.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "cross-env": "^7.0.3",
+    "esbuild": "^0.23.1",
+    "nodemon": "^3.1.4",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  }
+}
